@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Game-of-life--html5 by naveen-ithappu</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Game-of-life--html5</h1>
+        <p>Conway&#39;s Game of Life Implementation using HTML5 Canavs, Jquery, CSS</p>
+
+        <p class="view"><a href="https://github.com/naveen-ithappu/Game-of-Life--HTML5">View the Project on GitHub <small>naveen-ithappu/Game-of-Life--HTML5</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/naveen-ithappu/Game-of-Life--HTML5/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/naveen-ithappu/Game-of-Life--HTML5/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/naveen-ithappu/Game-of-Life--HTML5">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="conways-game-of-life" class="anchor" href="#conways-game-of-life"><span class="octicon octicon-link"></span></a>Conway's Game of Life</h1>
+
+<p>The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
+The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+
+<h2>
+<a name="rules" class="anchor" href="#rules"><span class="octicon octicon-link"></span></a>Rules</h2>
+
+<p>The universe of the Game of Life is finite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead. Every cell interacts with its eight neighbors, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:</p>
+
+<p>Any live cell with fewer than two live neighbors dies, as if caused by under-population.</p>
+
+<p>Any live cell with two or three live neighbors lives on to the next generation.</p>
+
+<p>Any live cell with more than three live neighbors dies, as if by overcrowding.</p>
+
+<p>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</p>
+
+<p>The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed — births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick (in other words, each generation is a pure function of the preceding one). The rules continue to be applied repeatedly to create further generations.</p>
+
+<h2>
+<a name="the-code" class="anchor" href="#the-code"><span class="octicon octicon-link"></span></a>The code</h2>
+
+<p>This is a Javascript implementation of Conway's Game of Life.</p>
+
+<p>In order to run the game open the 'index.html'. There will be a 5x5 world rendered. Dead cells are in white; alive cells are in black. To change the state of one cell you should click the cell.</p>
+
+<p>When you click 'Step' it will run one tick one the world applying the rules of the game to the world. If you click 'Start' it will run ticks automatically.The simulation self sustains till all the cells die or you click 'Stop' button.</p>
+
+<h2>
+<a name="supported-browsers" class="anchor" href="#supported-browsers"><span class="octicon octicon-link"></span></a>Supported Browsers</h2>
+
+<ul>
+<li>IE &gt;= 6 (Yes IE6 also)</li>
+<li>Chrome</li>
+<li>Mozilla</li>
+<li>Safari</li>
+</ul><blockquote>
+<p><em>Best viewed in chrome browser (Thanks to V8)</em></p>
+</blockquote>
+
+<h2>
+<a name="known-issues" class="anchor" href="#known-issues"><span class="octicon octicon-link"></span></a>Known Issues</h2>
+
+<ul>
+<li>Left panel configuration options show extra 1px border on top and bottom in IE6</li>
+<li>Higher grid size causes performance issue in IE browser</li>
+</ul><h2>
+<a name="how-to-build" class="anchor" href="#how-to-build"><span class="octicon octicon-link"></span></a>How to build</h2>
+
+<ul>
+<li>Open command prompt in project folder</li>
+<li>Run <code>npm install -d</code>
+</li>
+<li>Once done, run <code>grunt</code>
+</li>
+</ul><blockquote>
+<p><em>Requires node and grunt cli pre installed in system to build source. Refer <code>package.json</code> for required modules</em> </p>
+</blockquote>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/naveen-ithappu">naveen-ithappu</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
