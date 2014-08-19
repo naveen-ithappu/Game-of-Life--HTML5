@@ -38,6 +38,10 @@ Supported Browsers
 
 > *Best viewed in chrome browser (Thanks to V8)*
 
+Demo
+----
+[http://naveen-ithappu.github.io/GameofLife](http://naveen-ithappu.github.io/GameofLife)
+
 Known Issues
 ------------
 - Left panel configuration options show extra 1px border on top and bottom in IE6
