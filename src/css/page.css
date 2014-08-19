@@ -1,0 +1,264 @@
+/* 
+    Created on : Aug 7, 2014, 7:23:56 AM
+    Author     : Naveen
+    This file contains the styles required to style the page
+*/
+html, body {
+  height:100%;
+}
+body {
+  min-width:320px;
+  min-height: 100%;
+  background-color: #f7f7f7;
+}
+::-webkit-scrollbar{
+  width:10px;
+  height:16px;
+  overflow:visible;
+}
+::-webkit-scrollbar-thumb{
+  min-height:28px;
+  padding:100px 0 0;
+  background-color: #cbcbcb;
+  background-color:rgba(0,0,0,.2);
+  background-clip:padding-box;
+  border:solid transparent;
+  border-width:1px;
+  box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+}
+::-webkit-scrollbar-button{
+  width:0;
+  height:0;
+}
+::-webkit-scrollbar-track{
+  background-clip:padding-box;
+  border:solid transparent;
+  border-width:0 0 0 4px;
+}
+::-webkit-scrollbar-corner{
+  background:transparent;
+}
+
+.navbar {
+  height: 50px;
+  padding-left:20px;
+  margin-bottom:0;
+  color:#fff;
+  background-color:#3176b1;
+  border-bottom: 1px solid #2a6496;
+}
+
+.navbar h4 {
+  padding: 0;
+  margin: 0;
+  line-height: 2.75;
+}
+
+.main{
+  position: absolute;
+  top:50px;
+  right:0;
+  bottom: 0;
+  left:0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sideNav, .contentWrapper {
+  height: 100%;
+}
+
+.sideNav{
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  float: left;
+  width: 260px;
+  background: #838383;
+  border-right: 1px solid #555;
+    /* padding: 10px 5px; */
+}
+.panel{
+  background: transparent;
+}
+.panel .panel-header{
+  padding: 10px 15px;
+  color: #d6d6d6;
+  cursor: pointer;
+  background-color: #222;
+  border-bottom:1px solid #080808;
+}
+.panel .panel-body{
+  display: none;
+  padding-bottom: 10px;
+}
+
+.panel.active .panel-header{
+  color: #fff;
+  background-color: #174770;
+  border-color: #1b6aaf;
+}
+
+.panel.active .panel-body{
+  display: block;
+}
+.gameConfigPanel .cfgOpts{
+  padding: 0 15px;
+}
+.gameConfigPanel .cfgOpt{
+  padding: 10px 7px 5px;
+  border-top: 1px solid #929292;
+  border-bottom: 1px solid #5f5f5f;
+}
+.gameConfigPanel .cfgOpts .cfgOpt:first-child{
+  border-top:none;
+}
+.gameConfigPanel .cfgOpts .cfgOpt:last-child{
+  border-bottom:none;
+}
+.cfgOpt label{
+  display: inline-block;
+  width: 140px;
+  color:#fff;
+}
+.cfgOpt .input{
+  width: 70px;
+  height: 30px;
+  padding: 0 0 0 7px;
+  line-height: 30px;
+  border: 1px solid #555;
+     -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+.cfgOpt .hint{
+  margin: 5px 0 0 0;
+  font-size: 9px;
+  font-style: italic;
+  color: #bbbaba;
+  letter-spacing: .1em;
+}
+
+.ielt8 .cfgOpt .input{
+  width:60px !important; /*box-sizing problem in < IE8*/
+}
+.cfgOpt select{
+  display: block;
+  width:100%;
+  height: 30px;
+  padding: 0 0 0 7px;
+  margin-top: 5px;
+  line-height: 30px;
+  border: 1px solid #555;
+     -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+.gameConfigPanel .btnWrp{
+  margin: 10px 20px 0 20px;
+}
+
+.configBtnsWrp{
+  padding: 10px 20px;
+  text-align: center;
+}
+.configBtnsWrp .btn{
+    /* width: 90px; */
+    /* margin-right: 10px; */
+  margin-bottom: 15px;
+}
+.configBtnsWrp .btnStop{
+  display: none;
+}
+
+.configBtnsWrp.started .btn{
+  display: none;
+}
+.configBtnsWrp.started .btnStop{
+  display: block !important;
+}
+
+
+.contentWrapper {
+  position: relative;
+  margin-left: 260px;
+  -webkit-box-shadow: 0 0 12px 10px #f0f0f0 inset;
+     -moz-box-shadow: 0 0 12px 10px #f0f0f0 inset;
+          box-shadow: 0 0 12px 10px #f0f0f0 inset;
+}
+
+.canvasCntr{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 80px;
+  left: 0;
+  height: 100%;
+  padding: 20px;
+  overflow: auto;
+  text-align: center;
+}
+
+.gameStatsCntr{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: #efefef;
+  border-top: 1px solid #e4e4e4;
+}
+.stat .statNo{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+    /* line-height: 1.7; */
+}
+.stat .statTxt{
+  display: block;
+  font-size: 12px;
+}
+.gameStatsCntr .stat{
+    /*display: inline-block;    */
+  float: left;
+  width: 100px;
+  padding: 6px;
+  margin: 0 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+.ielt8 .gameStatsCntr .stat{
+  behavior: url('boxsizing.htc');
+}
+.gameStatsCntr .center-block{
+  width: 480px;
+}
+.ielt8 .gameStatsCntr .center-block{
+  width: 538px !important; /*box-sizing problem in <IE8*/
+}
+
+/**/
+.polyCanvas{
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.polyCanvas .guide, .polyCanvas .cell{
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 1;
+}
+.polyCanvas .guide{
+  width:1px;
+  height: 1px;
+  overflow: hidden;
+}
+.polyCanvas .cell{
+  z-index: 2;
+}
+.polyCanvas .cell.alive{
+  background-color: #000;
+}
