@@ -40,7 +40,7 @@ Supported Browsers
 
 Demo
 ----
-[http://naveen-ithappu.github.io/GameofLife](http://naveen-ithappu.github.io/GameofLife)
+[http://naveen-ithappu.github.io/demo/GameOfLife/build/](http://naveen-ithappu.github.io/demo/GameOfLife/build/)
 
 Known Issues
 ------------
